@@ -23,7 +23,7 @@ def create_gui():
 
     # Iages.
     images = []
-    for i in range(1, 2):  # The numbers and images must be the same.
+    for i in range(1, 2):  # The numbers and images must be the same. This is ready to have 1 action at the moment.
         image = Image.open(f"image_{i}.png")
         # Redimensionar la imagen manteniendo la relación de aspecto
         image.thumbnail((100, 100))
@@ -33,11 +33,11 @@ def create_gui():
         images.append(photo)
 
     # Numbers.
-    for i in range(1, 2): # The numbers and images must be the same.
+    for i in range(1, 2): # The numbers and images must be the same. This is ready to have 1 action at the moment.
         label = tk.Label(root, text=str(i))
         label.grid(row=1, column=i-1, pady=5)
 
-  # Note: It is recommended that each function that is put into action should have its image in the same folder as the main.py script.
+  # Note: It is recommended that each function that is put like (open_gmail, open_folder...) should have its image in the same folder as the main.py script.
 
     root.bind('<Key>', on_key_press)
 
