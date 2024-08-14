@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 import subprocess
 import os
 
-# Detección de teclas
+# Key detection
 def on_key_press(event):
     if event.char == "1":
         open_gmail()
@@ -12,12 +12,12 @@ def on_key_press(event):
     else:
         print(f"Tecla {event.char} no asignada [!]")
 
-# Configuración GUI
+# GUI Settings
 def create_gui():
     root = tk.Tk()
     root.title("ROSengine")
 
-    # Crear un frame para las imágenes
+    # Create a frame for the images
     frame = tk.Frame(root)
     frame.grid(row=0, column=0, columnspan=4, pady=10)  # Ajustado a 4 columnas
 
