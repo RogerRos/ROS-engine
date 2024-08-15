@@ -8,7 +8,7 @@ def on_key_press(event):
     if event.char == "1":
         open_gmail()
     elif event.char == "2":
-       open_folder(r"C:/Users/Roger/software")
+       open_folder(r"c:...") # The address of the folder.
     else:
         print(f"Tecla {event.char} no asignada [!]")
 
@@ -23,7 +23,7 @@ def create_gui():
 
     # Upload images and labels to display them
     images = []
-    for i in range(1, 2): # The numbers and images must be the same. This is ready to have 1 action at the moment.
+    for i in range(1, 3): # The numbers and images must be the same. This is ready to have 1 action at the moment.
         image = Image.open(f"image_{i}.png")
         image.thumbnail((100, 100))
         photo = ImageTk.PhotoImage(image)
